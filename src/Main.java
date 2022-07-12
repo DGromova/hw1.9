@@ -2,22 +2,22 @@ public class Main {
     public static void main(String[] args) {
         Author rayBradbury = new Author("Ray", "Bradbury");
         Book fahrenheit451 = new Book("Fahrenheit 451", rayBradbury, 1953);
+        System.out.println(fahrenheit451);
 
-        System.out.println("fahrenheit451.getName = " + fahrenheit451.getName());
-        System.out.println("rayBradbury.getAuthorName = " + rayBradbury.getAuthorName());
-        System.out.println("rayBradbury.getAuthorSurname = " + rayBradbury.getAuthorSurname());
-        System.out.println("fahrenheit451.getYear = " + fahrenheit451.getYear());
+        Book fahrenheit451NewYear = new Book("Fahrenheit 451", rayBradbury, 1990);
+        Book fahrenheit451Second = new Book("Fahrenheit 451", rayBradbury, 1953);
+
         System.out.println();
 
         Author jackLondon = new Author("Jack", "London");
         Book whiteFang = new Book("White Fang", jackLondon,1906);
-
-        System.out.println("whiteFang.getName = " + whiteFang.getName());
-        System.out.println("jackLondon.getAuthorName = " + jackLondon.getAuthorName());
-        System.out.println("jackLondon.getAuthorSurname = " + jackLondon.getAuthorSurname());
-        System.out.println("whiteFang.getYear = " + whiteFang.getYear());
+        System.out.println(whiteFang);
 
         whiteFang.setYear(2000);
-        System.out.println("whiteFang.getYear = " + whiteFang.getYear());
+        System.out.println(whiteFang);
+
+        System.out.println(whiteFang.equals(fahrenheit451));
+        System.out.println(fahrenheit451.equals(fahrenheit451Second));
+        System.out.println(fahrenheit451NewYear.equals(fahrenheit451));
     }
 }
