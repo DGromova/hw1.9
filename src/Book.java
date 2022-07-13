@@ -1,8 +1,8 @@
 import java.util.Objects;
 
 public class Book {
-    private String name;
-    private Author author;
+    private final String name;
+    private final Author author;
     private int year;
 
     public Book(String name, Author author, int year) {
@@ -37,7 +37,7 @@ public class Book {
     }
     @Override
         public String toString() {
-        return "Название книги: " + this.name + " Автор: " + this.author + " Год издания: " + this.year;
+        return "Название книги: " + name + " Автор: " + author + " Год издания: " + year;
     }
 }
 

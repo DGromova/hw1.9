@@ -19,5 +19,7 @@ public class Main {
         System.out.println(whiteFang.equals(fahrenheit451));
         System.out.println(fahrenheit451.equals(fahrenheit451Second));
         System.out.println(fahrenheit451NewYear.equals(fahrenheit451));
+        System.out.println(fahrenheit451.hashCode() == fahrenheit451Second.hashCode());
+        System.out.println(fahrenheit451Second.hashCode() == whiteFang.hashCode());
     }
 }

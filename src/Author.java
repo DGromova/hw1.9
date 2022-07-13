@@ -1,5 +1,5 @@
 public class Author {
-    private String authorName, authorSurname;
+    private final String authorName, authorSurname;
 
     public Author(String authorName, String authorSurname) {
         this.authorName = authorName;
